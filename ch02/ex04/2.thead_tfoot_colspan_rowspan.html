@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>thead tfoot tbody colspan rowspan</title>
+</head>
+<body>
+    <!-- border를 사용하면 표의 선을 만들수 있다.-->
+    <table border='1'>
+        <!--thead - 칼럼의 집합(제일 윗부분인 머리) 개념 -->
+        <thead>
+            <tr>
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <!-- tfood - 바닥의 개념(thead와 반대)-->
+        <tfoot>
+            <tr>
+                <!-- colspan - column셀 병합-->
+                <td colspan='4'>바깥체 전체를 빌립니다.</td>
+            </tr>
+        </tfoot>
+        <!-- tbody - 칼럼의 내용을 기술-->
+        <tbody>
+            <tr>
+                <th>유채방</th>
+                <td>여성 도미토리</td>
+                <!-- rowspan - row셀을 병합-->
+                <td rowspan='3'>4인실</td>
+                <td rowspan='4'>1인 20,000원</td>
+            </tr>
+            <tr>
+                <th rowspan='2'>동백방</th>
+                <td>동성 도미토리</td>
+            </tr>
+            <tr>
+                <td>가족1팀</td>
+            </tr>
+            <tr>
+                <th>천혜향방</th>
+                <td></td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
