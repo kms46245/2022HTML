@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>label</title>
+</head>
+<body>
+    <form action='#'>
+        <!--symantic관점에서 나쁜코드-->
+        이메일 <input type='text'/><br>
+        <!--좋은코드-->
+        <label>이메일</label> <input type='text'/>
+        <label for='userId'>아이디</label> <input type='text' id='userId'/><br>
+        <label>암 &nbsp; 호 <input type='password'/></label>
+    </form>
+</body>
+</html>

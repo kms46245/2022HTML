@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>flame</title>
+  <!--css 문법-->
+  <style>
+        #bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+            background: url(../res/flame.jpg);
+            background-size: cover;
+        }
+
+        #container {
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+   </style>
+</head>
+<body>
+    <!--자동재생하는데 소리는 안났으면 좋겠으면 autoplay와 muted-->
+    <video id='bg' src='../res/flame.mp4' autoplay muted></video>
+    <div id='container'>
+        <h2>정성이 하늘에 닿는다.</h2>
+        <h1><a href='http://bisang2016.net'>촛불혁명</a></h1>
+    </div>
+</body>
+</html>

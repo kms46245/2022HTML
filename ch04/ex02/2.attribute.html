@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='UTF-8'>
+   <title>input attribute</title>
+</head>
+<!--속성-->
+<body>
+    <!--attribute는 값이 고정되어있음-->
+    <!--property는 값이 변할수있음-->
+    <form>
+        <input type='text' name='userId' id='userId' size='15'/><br>
+                            <!--readonly하면 벨류값이 고정됨-->
+        <input type='text' value='how' readonly/> <br>
+        <input type='text' placeholder='이름'/> <br>
+        <input type='text' autofocus/> <br>
+        <!--입력값의 길이를 조정하려면-->           <!--required필수 입력란-->
+        <input type='text' minlength='3' maxlength='5' required/> <br>
+                                    <!--step 증가량-->
+        <input type='number' min='1' max='6' step='2'/> <br>
+        <input type='date' min='2022-08-01' max='2022-08-03'/>
+        <input type='time' min='09:00' max='13:00'/> <br>
+        
+        <input type='submit' value='전송'/>
+        <input type='submit' formaction='#' formmethod='post' formtarget='msg'/> <br>
+        <input type='file' multiple/>
+    </form>
+</body>
+</html>
